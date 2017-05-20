@@ -37,7 +37,10 @@
 
 namespace hyperdrive;
 
-defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
+/**
+ * @todo re-enable or remove from file
+ */
+// defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
 
 /**
  * Engages Hyperdrive.
@@ -45,9 +48,11 @@ defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
  * Engages Hyperdrive while printing scripts or data
  * in the head tag on the front end.
  *
+ * @todo re-enable or remove from file
+ *
  * @since 1.0.0
  */
-add_action( 'wp_head', __NAMESPACE__ . '\engage' );
+// add_action( 'wp_head', __NAMESPACE__ . '\engage' );
 
 /**
  * Calibrates Hyperdrive thrusters.
