@@ -30,6 +30,8 @@ matrix:
       env: WP_VERSION=nightly
     - php: 5.6
       env: WP_TRAVISCI=phpcs
+    - php: 7.0
+      env: WP_TRAVISCI=kahlan
   allow_failures:
     - php: 5.6
       env: WP_TRAVISCI=phpcs
@@ -38,7 +40,6 @@ install:
   - composer install --prefer-dist
 
 before_script:
-  - composer test:plugin:unit
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
@@ -57,6 +58,7 @@ before_script:
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
+      composer test:plugin:unit
       phpunit
       WP_MULTISITE=1 phpunit
     fi
