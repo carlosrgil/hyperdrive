@@ -22,8 +22,6 @@ matrix:
       env: WP_VERSION=latest COVERAGE=yes
     - php: 7.0
       env: WP_VERSION=latest
-    - php: 7.0
-      env: WP_TRAVISCI=kahlan
     - php: 5.6
       env: WP_VERSION=4.6
     - php: 5.6
@@ -32,6 +30,8 @@ matrix:
       env: WP_VERSION=nightly
     - php: 5.6
       env: WP_TRAVISCI=phpcs
+    - php: 7.0
+      env: WP_TRAVISCI=kahlan
   allow_failures:
     - php: 5.6
       env: WP_TRAVISCI=phpcs
