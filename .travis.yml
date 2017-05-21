@@ -59,6 +59,9 @@ script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
       composer test:plugin:unit
+    fi
+  - |
+    if [[ ! -z "$WP_VERSION" ]] ; then
       phpunit
       WP_MULTISITE=1 phpunit
     fi
