@@ -18,7 +18,7 @@ describe('hyperdrive', function () {
 
     it('does not echo unexpected string', function () {
       $closure = function() { enter_hyperspace('Danger, Will Robinson!'); };
-      expect($closure)->not->toEcho('<script>Smoke \'em if you got \'em</script>');
+      expect($closure)->not->toEcho('<script>Warning! Warning!</script>');
     });
   });
 });

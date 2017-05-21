@@ -11,7 +11,8 @@
   }],
   "scripts": {
     "lint:config": "bin/lint-config.sh",
-    "lint:plugin": "bin/lint-php.sh ./src"
+    "lint:plugin": "bin/lint-php.sh ./src",
+    "test:plugin:unit": "bin/test-plugin.sh"
   },
   "type": "wordpress-plugin",
   "repositories": [{
