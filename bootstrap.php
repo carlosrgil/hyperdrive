@@ -14,7 +14,7 @@
  * Author:          Josh Habdas
  * Author URI:      https://habd.as
  * Text Domain:     hyperdrive
- * License:         AGPLv3+
+ * License:         AGPL-3.0+
  * License URI:     https://choosealicense.com/licenses/agpl-3.0/
  *
  * Hyperdrive - The fastest way to load pages in WordPress.
