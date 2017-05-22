@@ -2,9 +2,15 @@
 
 namespace hyperdrive\spec;
 
+use function Patchwork\redefine as redefine;
+use function Patchwork\always as always;
+
 use function hyperdrive\enter_hyperspace;
 
+redefine('die', always(null));
+
 describe('hyperdrive', function () {
+
   describe('enter_hyperspace()', function () {
     it('echos empty script given empty string', function () {
       $closure = function() { enter_hyperspace(''); };

@@ -35,8 +35,10 @@
  * <https://choosealicense.com/licenses/agpl-3.0/>.
  */
 
-namespace hyperdrive;
+namespace hyperdrive\bootstrap;
 
 defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
 
-require_once( __DIR__ . '/src/hyperdrive.php' );
+$hyperdrive = __DIR__ . '/src/hyperdrive.php';
+
+file_exists($hyperdrive) && require_once $hyperdrive;

@@ -28,9 +28,15 @@
       "src/hyperdrive.php"
     ]
   },
+  "autoload-dev": {
+    "files": [
+      "vendor/antecedent/patchwork/Patchwork.php"
+    ]
+  },
   "require-dev": {
     "kahlan/kahlan": "^3.1",
-    "stevegrunwell/wp-enforcer": "dev-master"
+    "stevegrunwell/wp-enforcer": "dev-master",
+    "antecedent/patchwork": "^2.0"
   },
   "extra": {
     "branch-alias": {

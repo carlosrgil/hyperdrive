@@ -40,7 +40,7 @@ namespace hyperdrive;
 /**
  * @todo re-enable or remove from file
  */
-// defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
+defined( 'ABSPATH' ) || die( 'Now you are going to die! BAM!' );
 
 /**
  * Engages Hyperdrive.
